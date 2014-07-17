@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+
+<plugin id="org.eclipse.contribution.hello" name="Hello World" version="1.0.0">
+<requires>
+  <import plugin="org.eclipse.ui"/>
+</requires>
+<extension point="org.eclipse.ui.actionSets">
+  <actionSet
+    id="org.eclipse.contribution.hello.actionSet"
+    label="zhouxuan now">
+    <action
+      id="org.eclipse.contribution.hello.HelloAction"
+      menubarPath="help/helpStart"
+      toolbarPath="zhouxuan"
+      class="org.eclipse.contribution.hello.actions.OwnAction"
+      label="limao">
+    </action>
+  </actionSet>
+</extension>
+ </plugin>
